@@ -1,0 +1,17 @@
+{
+  "name": "prd-task-splitter",
+  "version": "1.0.0",
+  "displayName": "PRD 智能任务拆解器",
+  "description": "输入中文产品需求文档（PRD），自动拆解为开发任务清单，包含工时估算、依赖关系、风险识别，支持 Markdown / CSV / JSON 三种输出格式",
+  "author": "悬念 (Namune)",
+  "keywords": ["prd", "task", "project-management", "estimation", "chinese", "agile"],
+  "category": "productivity",
+  "language": "python",
+  "entry": "main.py",
+  "requirements": ["python>=3.8"],
+  "config": {
+    "output_formats": ["markdown", "csv", "json"],
+    "task_types": ["前端", "后端", "数据库", "测试", "运维/部署", "UI/设计"],
+    "priority_levels": ["P0-紧急", "P1-高", "P2-中", "P3-低"]
+  }
+}
